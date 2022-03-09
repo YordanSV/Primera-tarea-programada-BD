@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>User register</title>
+
+    <script src="app.js" defer></script>
+</head>
+<body>
+<h1>Login</h1>
+<input type="text" id="email" size="30"><br/><br/>
+<input type="password" id="pass" size="30"><br/>
+<input type="button" value="Iniciar sesion!" onclick="login()">
+<div id="result"></div>
+
+
+<script type="text/javascript">
+    function login(){
+        var argOne=document.getElementById('email').value;
+        var argTwo=document.getElementById('pass').value;
+        //var ans=(argOne*argTwo);
+        document.getElementById('result').innerHTML='El correo es ' + argOne + ' y la pass ' + argTwo;
+    }
+</script>
+</body>
+</html>
+
+
+
